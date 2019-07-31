@@ -6,11 +6,15 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
+import { Button } from 'ant-design-vue'
 export default {
   data () {
     return {
 
     }
+  },
+  components: {
+    AButton: Button
   },
   computed: {
     ...mapState('home', [
