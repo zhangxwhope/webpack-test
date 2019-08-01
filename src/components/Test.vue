@@ -1,6 +1,7 @@
 <template>
   <div class="mod-test">
     <a-button>Test</a-button>
+    <zxw-header></zxw-header>
   </div>
 </template>
 
