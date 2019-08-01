@@ -74,6 +74,16 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
+      },
+      {
+        test: /\.(js|vue|css)$/,
+        // loader: path.resolve(__dirname, './Loaders/static-loader/index.js'),
+        loader: 'my-test-loader',
+        include: path.resolve(__dirname, '../src'),
+        exclude: path.resolve(__dirname, '../node_modules'),
+        options: {
+          replace: process.env.NODE_ENV === 'production' ? './production/static/' : './development/static/'
+        }
       }
     ]
   },
