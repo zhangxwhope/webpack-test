@@ -25,7 +25,7 @@ fetch.interceptors.response.use(response => {
   if (ret === 0) {
     return response.data
   } else {
-    return Promise.reject('服务器错误')
+    return Promise.reject(new Error('服务器错误'))
   }
 }, error => {
   return Promise.reject(error)
