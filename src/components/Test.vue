@@ -11,7 +11,7 @@ import { Button } from 'ant-design-vue'
 export default {
   data () {
     return {
-
+      title: 'aaa'
     }
   },
   components: {
@@ -25,7 +25,10 @@ export default {
   methods: {
     ...mapActions('home', [
       'getData'
-    ])
+    ]),
+    test () {
+      if (this.title === 'aaa') { console.log('aaa') }
+    }
   },
   created () {
     this.$nextTick(() => {
