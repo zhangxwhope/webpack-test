@@ -8,9 +8,12 @@ import store from './store'
 // import 'ant-design-vue/dist/antd.css'
 import zxwUI from 'zxw-test-component'
 import 'zxw-test-component/dist/zxw.css'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 
 // Vue.use(Antd)
 Vue.use(zxwUI)
+Vue.use(ElementUI)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

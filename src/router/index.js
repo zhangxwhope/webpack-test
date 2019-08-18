@@ -17,6 +17,11 @@ export default new Router({
       path: '/test',
       name: 'Test',
       component: resolve => require.ensure([], () => resolve(require('@/components/Test')), 'test')
+    },
+    {
+      path: '/jsonToTree',
+      name: 'jsonToTree',
+      component: resolve => require.ensure([], () => resolve(require('@/components/jsonToTree')), 'jsonToTree')
     }
   ]
 })
